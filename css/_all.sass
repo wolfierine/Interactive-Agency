@@ -1,0 +1,80 @@
+body, html 
+	margin: 0
+	padding: 0
+	font:
+		size: 62.5%
+
+	.page-container
+		min-width: 100%
+		max-width: 100%
+
+	.text-center
+		text-align: center
+
+	.container-fluid
+		height: 100%
+
+	a
+		text-decoration: none
+
+		&:hover 
+			text-decoration: none
+
+	.bold
+		font:
+			weight: bold	
+
+	.light 
+		font: 
+			weight: 100		
+
+	.button-content
+		position: relative
+		z-index: 999
+		color: #fff
+		transition: all .5s ease-in-out
+
+	.button
+		font: 
+			family: 'Montserrat', sans-serif
+			size: 1.8rem
+			weight: normal 
+		color: #fff
+		outline: none 
+		border: none
+		white-space: nowrap
+		border-radius: 100px
+		padding: 15px 55px
+		background: linear-gradient(16deg, #49007c, #e70088)
+		display: inline-block	
+		position: relative
+		overflow: hidden
+
+
+		&:hover 
+			cursor: pointer 
+
+		&::before
+			content: ""
+			position: absolute
+			top: 0
+			left: -100%
+			bottom: 0
+			width: 100%
+			background: linear-gradient(16deg, #E2F7F7, #D9E0E0)
+			z-index: 99
+			border-radius: 100px
+			transition: all .5s ease-in-out
+
+		&:hover::before
+			left: 0
+			
+		&:hover .button-content
+			color: #000
+
+
+	
+				
+
+
+		

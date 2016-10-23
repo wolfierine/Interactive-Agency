@@ -1,0 +1,114 @@
+@media (max-width: 992px)
+
+	header
+		.nav
+				
+			nav.active
+				transform: translateX(0%)
+				
+			.logo.active
+				position: relative
+				z-index: 9999
+				color: #fff
+
+			.align-right
+				display: flex
+				justify-content: flex-end	
+			
+
+			nav
+				display: block !important
+				position: fixed
+				top: 0
+				left: 0
+				bottom: 0
+				width: 100%
+				background: #333
+				z-index: 9980
+				transform: translateX(-100%)
+				transition: all .5s ease-in-out
+
+				ul 
+					height: 100%
+					flex-direction: column
+					align-items: flex-start
+					justify-content: center
+
+					li 
+						a 
+							color: #fff
+		
+			nav.active + .hamburger .line
+				background: transparent
+
+				&::before
+					background: #fff
+					transform: rotate(45deg)
+					top: 0
+
+				&::after 
+					background: #fff
+					transform: rotate(-45deg)	
+					top: 0
+	
+	.code-design
+		position: relative
+		z-index: -1
+
+		.best-code
+			padding: 4% 5% 0 15%
+
+
+	.what-we-do
+		position: relative
+		z-index: -1
+
+		.height
+			height: auto
+
+			.col-md-9
+				text-align: center
+
+
+	.portfolio
+		position: relative
+		z-index: -1
+
+		.show-me, .left-arrow, .right-arrow
+			display: none
+
+	.about-us
+		position: relative
+		z-index: -1
+
+	footer
+		position: relative
+		z-index: -1	
+
+@media (min-width: 992px) and (max-width: 1440px)
+	
+	.code-design
+
+		.best-design, .best-code
+			height: auto
+			padding: 3%
+
+	
+	.portfolio
+
+		.row 
+
+			.show-me
+				padding: 0
+
+				.box 
+
+					h4
+						font: 
+							size: 2rem
+
+					p
+						font:
+							size: 1.4rem	
+
+											
